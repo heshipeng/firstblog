@@ -374,7 +374,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="小白成长史">
       <meta itemprop="description" content="时间和潮流永远不待人     --司各特">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/1.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -427,6 +427,18 @@
           
             
             
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/07/15/My-First-Test/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/15/My-First-Test/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -471,6 +483,19 @@
 
     
     
+    
+
+    
+      <div>
+       <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束
+        <i class="fa fa-paw"></i>
+        感谢您的阅读-------------</div>
+    
+</div>
+
+      </div>
     
 
     
@@ -524,6 +549,10 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+
+  
 
 
 
@@ -559,6 +588,8 @@
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  
+    <img class="site-author-image" itemprop="image" src="/images/1.jpg" alt="小白成长史">
   
   <p class="site-author-name" itemprop="name">小白成长史</p>
   <div class="site-description motion-element" itemprop="description">时间和潮流永远不待人     --司各特</div>
@@ -790,6 +821,32 @@
 
 
 
+
+
+  
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'olsueyJr1kuwaCefshP9tjEi-gzGzoHsz',
+    appKey: 'tCSQCDGcn4qaq7aegA4oF9fu',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
 
 
 
